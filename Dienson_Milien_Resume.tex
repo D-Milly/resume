@@ -1,0 +1,150 @@
+%-------------------------
+% Resume in LaTeX
+% Based on Jake Gutierrez's resume template
+% Compile with pdfLaTeX (works out of the box on Overleaf)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\setlength{\footskip}{4.08003pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Dienson Milien} \\ \vspace{1pt}
+    \small 646-804-8131 $|$ \href{mailto:dajamilien@gmail.com}{\underline{dajamilien@gmail.com}} $|$ 
+    Philadelphia, PA
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Community College of Philadelphia}{Philadelphia, PA}
+      {Associate of Applied Science in Cybersecurity \& Networking}{Expected May 2028}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Network Technology, Introduction to Information Technology}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Walmart Supercenter}{Willow Grove, PA}
+      {Digital Personal Shopper}{Aug. 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Pick customer orders accurately and efficiently using handheld scanners and Walmart digital apps while meeting timed delivery and pickup windows.}
+        \resumeItem{Verify item quality, quantity, and substitutions to ensure every order meets customer standards.}
+        \resumeItem{Navigate store aisles to locate products quickly and maintain accurate order and inventory records.}
+        \resumeItem{Greet and assist in-store customers, answering questions and providing a helpful experience during timed pick walks.}
+        \resumeItem{Work efficiently in a fast-paced environment while balancing accuracy, speed, and customer service.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Networking}{: Network fundamentals; Network Technology coursework} \\
+     \textbf{IT Fundamentals}{: Introduction to Information Technology coursework} \\
+     \textbf{Operating Systems}{: Linux, Windows Server} \\
+     \textbf{Tools}{: PowerShell, handheld scanners, inventory systems, Walmart digital apps} \\
+     \textbf{Professional}{: Customer service, teamwork, time management, fast-paced environments}
+    }}
+ \end{itemize}
+
+\end{document}
