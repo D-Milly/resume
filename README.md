@@ -10,9 +10,9 @@
 
 A one-page resume built with the [Jake's Resume](https://github.com/jakegut/resume) LaTeX template and typeset in Latin Modern (Computer Modern).
 
-- **Education:** Community College of Philadelphia — A.A.S. in Cybersecurity & Networking (expected May 2028)
+- **Education:** Community College of Philadelphia — A.A.S. in Cybersecurity & Networking (expected May 2028); International Christian High School (2026)
 - **Experience:** Digital Personal Shopper, Walmart Supercenter (Willow Grove, PA)
-- **Focus:** IT support, networking, Linux, Windows Server, and PowerShell
+- **Focus:** IT support, networking, Linux, Windows Server, PowerShell, and Cisco Packet Tracer
 
 ## Files
 

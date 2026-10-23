@@ -1,7 +1,8 @@
 %-------------------------
-% Resume in LaTeX
-% Based on Jake Gutierrez's resume template
-% Compile with pdfLaTeX (works out of the box on Overleaf)
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -17,7 +18,10 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\input{glyphtounicode}
+\ifdefined\pdfglyphtounicode
+  \input{glyphtounicode}
+\fi
+
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -30,10 +34,12 @@
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
 
+
 \pagestyle{fancy}
-\fancyhf{}
+\fancyhf{} % clear all header and footer fields
 \fancyfoot{}
-\setlength{\footskip}{4.08003pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -54,7 +60,9 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
 
 %-------------------------
 % Custom commands
@@ -98,59 +106,76 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 \begin{document}
 
 %----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
 \begin{center}
     \textbf{\Huge \scshape Dienson Milien} \\ \vspace{1pt}
-    \small 646-804-8131 $|$ \href{mailto:dajamilien@gmail.com}{\underline{dajamilien@gmail.com}} $|$ 
-    \href{https://www.linkedin.com/in/dienson-milien}{\underline{linkedin.com/in/dienson-milien}} $|$
+    \small 646-804-8131 $|$ \href{mailto:dajamilien@gmail.com}{\underline{dajamilien@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/dienson-milien-b5590b42a/}{\underline{linkedin.com/in/dienson-milien}} $|$
+    \href{https://github.com/D-Milly}{\underline{github.com/D-Milly}} $|$
     Philadelphia, PA
 \end{center}
 
+
 %-----------SUMMARY-----------
 \section{Summary}
- \small{Cybersecurity \& Networking A.A.S. student at Community College of Philadelphia seeking a 2027 cybersecurity or IT internship. Building practical skills in Linux, Windows Server, and PowerShell through coursework, with customer-facing experience at Walmart. Interested in IT support, networking, and security operations.}
+ \small{Cybersecurity and Networking A.A.S. student at the Community College of Philadelphia (expected May 2028) seeking a 2027 cybersecurity or IT internship. Coursework and hands-on labs in TCP/IP, subnetting, Cisco Packet Tracer, Linux administration and hardening, Windows Server, Bash, and PowerShell. Customer-facing retail experience at Walmart with strong communication, accuracy, and time-management skills. Interested in IT support, network operations, and security operations.}
+
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Community College of Philadelphia}{Philadelphia, PA}
-      {Associate of Applied Science in Cybersecurity \& Networking}{Expected May 2028}
+      {Associate of Applied Science in Cybersecurity \& Networking}{Sep. 2026 -- May 2028}
       \resumeItemListStart
         \resumeItem{\textbf{Relevant Coursework:} Network Technology, Introduction to Information Technology}
       \resumeItemListEnd
+    \resumeSubheading
+      {International Christian High School}{Philadelphia, PA}
+      {High School Diploma}{Aug. 2022 -- June 2026}
   \resumeSubHeadingListEnd
+
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Walmart Supercenter}{Willow Grove, PA}
       {Digital Personal Shopper}{Aug. 2026 -- Present}
+      {Walmart Supercenter}{Willow Grove, PA}
       \resumeItemListStart
-        \resumeItem{Pick customer orders accurately and efficiently using handheld scanners and Walmart digital apps while meeting timed delivery and pickup windows.}
+        \resumeItem{Pick customer orders accurately and efficiently using handheld scanners and Walmart's digital apps while meeting timed delivery and pickup windows.}
+        \resumeItem{Navigate store aisles with a handheld device or mobile app to locate products quickly and maintain accurate order and inventory records.}
         \resumeItem{Verify item quality, quantity, and substitutions to ensure every order meets customer standards.}
-        \resumeItem{Navigate store aisles to locate products quickly and maintain accurate order and inventory records.}
         \resumeItem{Greet and assist in-store customers, answering questions and providing a helpful experience during timed pick walks.}
         \resumeItem{Work efficiently in a fast-paced environment while balancing accuracy, speed, and customer service.}
-        \resumeItem{Balance part-time work with college coursework, demonstrating reliability and time management.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
+
+%
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Networking}{: Network fundamentals; Network Technology coursework} \\
-     \textbf{IT Fundamentals}{: Introduction to Information Technology coursework} \\
-     \textbf{Operating Systems}{: Linux, Windows Server} \\
-     \textbf{Tools}{: PowerShell, handheld scanners, inventory systems, Walmart digital apps} \\
-     \textbf{Professional}{: Customer service, teamwork, time management, fast-paced environments}
+     \textbf{Networking}{: TCP/IP, subnetting, IP addressing, network configuration and troubleshooting} \\
+     \textbf{Operating Systems}{: Linux (command line, file management, system hardening), Windows Server} \\
+     \textbf{Scripting \& Automation}{: Bash, PowerShell} \\
+     \textbf{Security}{: Linux system hardening, security fundamentals} \\
+     \textbf{Tools}{: Cisco Packet Tracer, Git, GitHub} \\
+     \textbf{Professional}{: Customer service, teamwork, time management, accuracy and attention to detail}
     }}
  \end{itemize}
 
+
+%-------------------------------------------
 \end{document}
