@@ -2,7 +2,7 @@
 
 **Cybersecurity & Networking student · Philadelphia, PA**
 
-[**Download the PDF resume**](./Dienson_Milien_Resume.pdf)
+[**Download the PDF resume**](./Dienson_Milien_Resume.pdf) · [**View online**](https://d-milly.github.io/resume/) · [**LinkedIn**](https://www.linkedin.com/in/dienson-milien)
 
 ---
 
