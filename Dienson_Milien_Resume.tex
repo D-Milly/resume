@@ -1,8 +1,7 @@
 %-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
+% Resume in LaTeX
+% Based on Jake Gutierrez's resume template
+% Compile with pdfLaTeX (works out of the box on Overleaf)
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -22,7 +21,6 @@
   \input{glyphtounicode}
 \fi
 
-
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
@@ -34,12 +32,10 @@
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
 
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.08003pt}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -106,43 +102,15 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     \textbf{\Huge \scshape Dienson Milien} \\ \vspace{1pt}
     \small 646-804-8131 $|$ \href{mailto:dajamilien@gmail.com}{\underline{dajamilien@gmail.com}} $|$
     \href{https://www.linkedin.com/in/dienson-milien-b5590b42a/}{\underline{linkedin.com/in/dienson-milien}} $|$
-    \href{https://github.com/D-Milly}{\underline{github.com/D-Milly}} $|$
-    Philadelphia, PA
+    \href{https://github.com/D-Milly}{\underline{github.com/D-Milly}}
 \end{center}
-
-
-%-----------SUMMARY-----------
-\section{Summary}
- \small{Cybersecurity and Networking A.A.S. student at the Community College of Philadelphia (expected May 2028) seeking a 2027 cybersecurity or IT internship. Coursework and hands-on labs in TCP/IP, subnetting, Cisco Packet Tracer, Linux administration and hardening, Windows Server, Bash, and PowerShell. Customer-facing retail experience at Walmart with strong communication, accuracy, and time-management skills. Interested in IT support, network operations, and security operations.}
-
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Community College of Philadelphia}{Philadelphia, PA}
-      {Associate of Applied Science in Cybersecurity \& Networking}{Sep. 2026 -- May 2028}
-      \resumeItemListStart
-        \resumeItem{\textbf{Relevant Coursework:} Network Technology, Introduction to Information Technology}
-      \resumeItemListEnd
-    \resumeSubheading
-      {International Christian High School}{Philadelphia, PA}
-      {High School Diploma}{Aug. 2022 -- June 2026}
-  \resumeSubHeadingListEnd
-
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -152,30 +120,58 @@
       {Digital Personal Shopper}{Aug. 2026 -- Present}
       {Walmart Supercenter}{Willow Grove, PA}
       \resumeItemListStart
-        \resumeItem{Pick customer orders accurately and efficiently using handheld scanners and Walmart's digital apps while meeting timed delivery and pickup windows.}
-        \resumeItem{Navigate store aisles with a handheld device or mobile app to locate products quickly and maintain accurate order and inventory records.}
-        \resumeItem{Verify item quality, quantity, and substitutions to ensure every order meets customer standards.}
-        \resumeItem{Greet and assist in-store customers, answering questions and providing a helpful experience during timed pick walks.}
-        \resumeItem{Work efficiently in a fast-paced environment while balancing accuracy, speed, and customer service.}
+        \resumeItem{Process customer orders using handheld scanners and digital inventory systems while maintaining accuracy and meeting timed pickup windows.}
+        \resumeItem{Verify item quality, quantities, and substitutions to maintain accurate customer orders and inventory records.}
+        \resumeItem{Communicate with customers and team members to address order discrepancies and provide quality customer service.}
+        \resumeItem{Prioritize multiple tasks in a fast-paced environment while balancing efficiency, accuracy, and customer satisfaction.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Community College of Philadelphia}{Philadelphia, PA}
+      {Associate of Applied Science in Cybersecurity \& Networking}{Expected May 2028}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Network Technology, Introduction to Information Technology}
+      \resumeItemListEnd
+    \resumeSubheading
+      {International Christian High School}{Philadelphia, PA}
+      {High School Diploma}{June 2026}
+  \resumeSubHeadingListEnd
 
-%
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Networking}{: TCP/IP, subnetting, IP addressing, network configuration and troubleshooting} \\
-     \textbf{Operating Systems}{: Linux (command line, file management, system hardening), Windows Server} \\
+     \textbf{Networking}{: TCP/IP, Subnetting, IP Addressing, Router and Switch Configuration, Network Troubleshooting} \\
+     \textbf{Operating Systems}{: Linux (Command Line, File Management, System Hardening), Windows Server 2022} \\
      \textbf{Scripting \& Automation}{: Bash, PowerShell} \\
-     \textbf{Security}{: Linux system hardening, security fundamentals} \\
-     \textbf{Tools}{: Cisco Packet Tracer, Git, GitHub} \\
-     \textbf{Professional}{: Customer service, teamwork, time management, accuracy and attention to detail}
+     \textbf{Security}{: Linux System Hardening, Security Fundamentals} \\
+     \textbf{Tools}{: Cisco Packet Tracer, Git, GitHub}
     }}
  \end{itemize}
 
+%-----------TECHNICAL PROJECTS-----------
+\section{Technical Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Network Configuration \& Troubleshooting Labs} $|$ \emph{Cisco Packet Tracer}}{Fall 2026}
+          \resumeItemListStart
+            \resumeItem{Configured routers, switches, and network devices using Cisco Packet Tracer.}
+            \resumeItem{Assigned IP addresses and subnet masks to establish network connectivity.}
+            \resumeItem{Tested network connectivity and troubleshot configuration issues in simulated network environments.}
+            \resumeItem{Applied TCP/IP networking and subnetting concepts through hands-on network labs.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Windows Server Administration Lab} $|$ \emph{Windows Server 2022}}{Fall 2026}
+          \resumeItemListStart
+            \resumeItem{Practiced basic system administration tasks in guided Windows Server 2022 labs.}
+            \resumeItem{Used PowerShell commands to navigate and interact with Windows Server environments.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}

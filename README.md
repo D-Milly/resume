@@ -12,6 +12,7 @@ A one-page resume built with the [Jake's Resume](https://github.com/jakegut/resu
 
 - **Education:** Community College of Philadelphia — A.A.S. in Cybersecurity & Networking (expected May 2028); International Christian High School (2026)
 - **Experience:** Digital Personal Shopper, Walmart Supercenter (Willow Grove, PA)
+- **Projects:** Network Configuration & Troubleshooting Labs; Windows Server Administration Lab
 - **Focus:** IT support, networking, Linux, Windows Server, PowerShell, and Cisco Packet Tracer
 
 ## Files
